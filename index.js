@@ -521,6 +521,104 @@
 
 // console.log(filtered);
 
+//----------9-------------
+
+//returns first element after searching
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const found = array1.find(element => element > 07);
+
+// console.log(found);
+
+
+//------------10--------
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const isLargeNumber = (element) => element == 44;
+
+// console.log(array1.findIndex(isLargeNumber));
+
+////////-------------11----------
+// function isPrime(num) {
+//     for (let i = 2; num > i; i++) {
+//         if (num % i == 0) {
+//             return false;
+//         }
+//     }
+//     return num > 1;
+// }
+
+// console.log([4, 6, 7, 9, 12].findIndex(isPrime)); // 2 (array[2] is 7)
+
+///////---------12----------
+// const arr1 = [0, 1, 2, [
+//     [3, 4]
+// ]];
+
+// console.log(arr1.flat(2));
+
+////---------13----------------
+// const arr1 = [1, 2, [3, 4]];
+// console.log(arr1.flat());
+// // [1, 2, 3, 4]
+
+// const arr2 = [1, 2, [3, 4, [5, 6]]];
+// console.log(arr2.flat(2));
+// // [1, 2, 3, 4, [5, 6]]
+
+
+///------------14---------------
+// let arr1 = [1, 2, 3, 4];
+
+// console.log(arr1.map(x => [x * 2]));
+
+// console.log(arr1.flatMap(x => [x * 2]));
+
+// only one level is flattened
+// console.log(arr1.flatMap(x => [
+//     [x * 2]
+// ]));
+
+//-----------15-----------
+// const array1 = ['a', 'b', 'c11'];
+
+// array1.forEach(element => console.log(element));
+
+//------------16--------
+// const words = ['one', 'two', 'three', 'four'];
+// words.forEach((word) => {
+//     console.log(word);
+//     if (word === 'three') {
+//         words.shift(); //'one' will delete from array
+//     }
+// }); // one // two // four
+
+// console.log(words); // ['two', 'three', 'four']
+// modifying array element
+
+// //------------17---------
+// const flatten = (arr) => {
+//     const result = [];
+//     arr.forEach(i => {
+//         if (Array.isArray(i)) {
+//             result.push(...flatten(i));
+//         } else {
+//             result.push(i);
+//         }
+//     });
+//     return result;
+// }
+
+// // Usage
+// const nested = [1, 2, 3, [4, 5, [6, 7], 8, 9]];
+// console.log(...flatten(nested));
+
+//-----18-----------
+console.log(Array.from([123], x => x + x));
+
+
 
 
 
