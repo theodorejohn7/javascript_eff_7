@@ -743,18 +743,77 @@
 
 // console.log(array1.at(2));
 
-const inventory = [
-    { name: 'apples', quantity: 2 },
-    { name: 'bananas', quantity: 0 },
-    { name: 'cherries', quantity: 5 }
-];
+//////////----------34---------------
+// const inventory = [
+//     { name: 'apples', quantity: 2 },
+//     { name: 'bananas', quantity: 0 },
+//     { name: 'cherries', quantity: 5 },
+//     { name: 'cherries', quantity: 512 },
+//     { name: 'cherries', quantity: 51 },
+//     { name: 'cherries', quantity: 52 }
 
-const result = inventory.find(({ name }) => name === 'cherries');
+// ];
 
-console.log(result)
+// const result = inventory.find(({ name }) => name === 'cherries');
+
+// console.log(result)
+
+// {
+//     const result = inventory.filter(({ name }) => name === 'cherries');
+
+//     console.log(result)
+
+// }
 
 
+////////---------35-----------------
 
+// function isPrime(element) {
+//     let start = 2;
+//     while (start <= Math.sqrt(element)) {
+//         if (element % start++ < 1) {
+//             return false;
+//         }
+//     }
+//     return element > 1;
+// }
+
+// console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
+// console.log([4, 5, 8, 12].find(isPrime)); // 5
+
+
+//------36-----------
+// const array1 = [5, 12, 8, 130, 44];
+
+// const isLargeNumber = (element) => element > 13;
+
+// console.log(array1.findIndex(isLargeNumber));
+
+
+//---DIFFERENCE BETWEEN FOR IN AND FOR OF 
+
+// Object.prototype.objCustom = function() {};
+// Array.prototype.arrCustom = function() {};
+
+
+// const iterable = [3, 5, 7];
+// iterable.foo = 'hello';
+
+// console.log(iterable);
+
+// for (const i in iterable) {
+//     console.log(i); // logs "0", "1", "2", "foo", "arrCustom", "objCustom"
+// }
+
+// // for (const i in iterable) {
+// //     if (iterable.hasOwnProperty(i)) {
+// //         console.log(i); // logs "0", "1", "2", "foo"
+// //     }
+// // }
+
+// for (const i of iterable) {
+//     console.log(i); // logs 3, 5, 7
+// }
 
 
 
@@ -786,10 +845,24 @@ console.log(result)
 
 ///////////------3--------------
 
+class Rectangle {
+    constructor(height, width) {
+        this.name = 'Rectangle';
+        this.height = height;
+        this.width = width;
+    }
+}
 
+class FilledRectangle extends Rectangle {
+    constructor(height, width, color) {
+        super(height, width);
+        this.name = 'Filled rectangle';
+        this.color = color;
+    }
+}
 
-
-
+let rect = new FilledRectangle(10, 12, "pink");
+console.log(rect);
 
 
 
@@ -817,3 +890,7 @@ console.log(result)
 // };
 // console.log(Rectangle.name);
 // // output: "Rectangle2"
+
+
+// Completed arrow functions, ternary operator, rest and spread operator, Let and
+// const, methods, destructuring, builtin Array Functions
