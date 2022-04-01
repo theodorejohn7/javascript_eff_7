@@ -414,7 +414,7 @@
 /////-------ARRAY FUNCTIONS---------
 ////////////////////////////////////
 
-
+/////////////----------------1----------------
 // a = Array.isArray([]);
 // Array.isArray([1]);
 // Array.isArray(new Array());
@@ -438,6 +438,7 @@
 // b=Array.isArray({ __proto__: Array.prototype });
 // console.log(b);
 
+//////////------------2-----------------
 // CONCAT
 
 // const num1 = [1, 2, 3];
@@ -449,7 +450,100 @@
 // console.log(...numbers);
 // // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-//
+//////-------3-----------
+
+// // 
+// const array1 = ['a', 'b', 'c', 'd', 'e'];
+
+// // copy to index 0 the element at index 3
+// console.log(array1.copyWithin(1, 3, 5));
+
+// // copy to index 1 all elements from index 3 to the end
+// // console.log(array1.copyWithin(1, 3));
+
+/////----------4-------------
+// const array1 = ['a', 'b', 'c'];
+
+// const iterator1 = array1.entries();
+
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+// console.log(iterator1.next().value);
+
+// //lists entries one by one 
+
+
+////-----------5--------------
+// const isBelowThreshold = (currentValue) => currentValue < 30;
+
+// const array1 = [1, 30, 39, 29, 10, 13];
+
+// console.log(array1.every(isBelowThreshold));
+
+//checks for condition is true for all the elements in the array and returns value
+
+///-----------6--------------
+
+
+// const isSubset = (array1, array2) => array2.every(element => array1.includes(element));
+
+// console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6])); // true
+// console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 8, 7])); // false
+
+//isSubSet checks for subset in same order
+
+////-----------------7------------------
+// const array1 = [1, 2, 3, 4];
+
+// // fill with 0 from position 2 until position 4
+// console.log(array1.fill(0, 2, 4));
+// // expected output: [1, 2, 0, 0]
+
+// // fill with 5 from position 1
+// console.log(array1.fill(5, 1));
+// // expected output: [1, 5, 5, 5]
+
+// console.log(array1.fill(6));
+// // expected output: [6, 6, 6, 6]
+//helpfull in resetting array or replacing with some elements
+
+//--------------8--------------
+// filter
+// A new array with the elements that pass the test. If no elements 
+// pass the test, an empty array will be returned.
+
+// function isBigEnough(value) {
+//     return value < 100
+// }
+
+// let filtered = [12, 5, 8, 130, 44].filter(isBigEnough)
+
+// console.log(filtered);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
