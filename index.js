@@ -410,6 +410,51 @@
 // console.log(b);
 
 
+////////////////////////////////////
+/////-------ARRAY FUNCTIONS---------
+////////////////////////////////////
+
+
+// a = Array.isArray([]);
+// Array.isArray([1]);
+// Array.isArray(new Array());
+// Array.isArray(new Array('a', 'b', 'c', 'd'));
+// Array.isArray(new Array(3));
+// // Little known fact: Array.prototype itself is an array:
+// Array.isArray(Array.prototype);
+
+// console.log(a);
+
+// // all following calls return false
+// Array.isArray();
+// Array.isArray({});
+// Array.isArray(null);
+// Array.isArray(undefined);
+// Array.isArray(17);
+// Array.isArray('Array');
+// Array.isArray(true);
+// Array.isArray(false);
+// Array.isArray(new Uint8Array(32));
+// b=Array.isArray({ __proto__: Array.prototype });
+// console.log(b);
+
+// CONCAT
+
+// const num1 = [1, 2, 3];
+// const num2 = [4, 5, 6];
+// const num3 = [7, 8, 9];
+
+// const numbers = num1.concat(num2, num3);
+
+// console.log(...numbers);
+// // results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//
+
+
+
+
+
 ///////////////////////////////
 /////-----CLASSES--------------
 ///////////////////////////////
