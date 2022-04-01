@@ -616,17 +616,51 @@
 // console.log(...flatten(nested));
 
 //-----18-----------
-console.log(Array.from([123], x => x + x));
+// console.log(Array.from([123], x => x + x));
 
 
+//-------------19--------------
+// let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+// let removed = myFish.splice(1, 2, 'drum');
+// console.log(removed);
+// console.log(myFish);
+
+// splice similar to delete and replace or cut and replace
+
+//---------------20-------------
+
+//slice - can take and show a copy without affecting the parent array
+// const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+// console.log(animals.slice(2));
+// console.log(animals.slice(2, 3));
+
+////////----------21-----------
 
 
+// const num1 = [
+//     [1]
+// ];
+// const num2 = [2, [3]];
+
+// const numbers = num1.concat(num2);
+// console.log(numbers);
+
+// const numbers1 = [...num1, ...num2];
+// console.log(numbers1);
 
 
+////---------22------
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits);
+
+// console.log(fruits.sort());
+// fruits.reverse();
+// console.log(fruits);
 
 
-
-
+//------------23-----------
 
 
 
