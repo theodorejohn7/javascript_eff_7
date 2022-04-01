@@ -890,7 +890,3 @@ console.log(rect);
 // };
 // console.log(Rectangle.name);
 // // output: "Rectangle2"
-
-
-// Completed arrow functions, ternary operator, rest and spread operator, Let and
-// const, methods, destructuring, builtin Array Functions
