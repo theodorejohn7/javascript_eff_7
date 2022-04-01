@@ -663,15 +663,49 @@
 //------------23-----------
 
 
+// let a = "theodore";
+// let b = parseInt(a);
+// console.log(toString(b));
+// let a = parseInt("1");
+// console.log(a);
+
+//-----------24------------
+
+// ////String to Number conversion
+// str = 'abc';
+// b = +str;
+// console.log(typeof(str));
+// console.log(typeof(b));
+
+//--------25------------
+// // NaN comparison
+// NaN === NaN; // false
+// Number.NaN === NaN; // false
+// isNaN(NaN); // true
+// isNaN(Number.NaN); // true
+// Number.isNaN(NaN); // true
 
 
+//---------26-------------
+// function valueIsNaN(v) { return v !== v; }
+// valueIsNaN(1); // false
+// valueIsNaN(NaN); // true
+// valueIsNaN(Number.NaN); // true
 
+//--------------27--------------
 
+// const array1 = [1, 2, 'a', '1a'];
 
+// console.log(array1.toString());
 
+//-------------28------
 
+const array1 = [1, 2, 3];
 
+console.log(array1.unshift(4, 5));
+// expected output: 5
 
+console.log(array1);
 
 
 
