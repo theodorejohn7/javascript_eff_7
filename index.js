@@ -700,12 +700,59 @@
 
 //-------------28------
 
-const array1 = [1, 2, 3];
+// const array1 = [1, 2, 3];
 
-console.log(array1.unshift(4, 5));
-// expected output: 5
+// console.log(array1.unshift(4, 5));
+// // expected output: 5
 
-console.log(array1);
+// console.log(array1);
+
+
+
+//---------29-----------
+
+// const array1 = ['a', 'b', 'c', 'efede'];
+// const iterator = array1.values();
+
+// for (const value of iterator) {
+//     console.log(value);
+// }
+
+//-----------30--------------
+// const arr = ['a', 'b', 'c', 'd', 'e'];
+// const iterator = arr.values();
+
+// for (let letter of arr) {
+//     console.log(letter);
+// } //"a" "b" "c" "d" "e"
+
+//------------31----------
+
+// console.log((function() {}).constructor === Function);
+
+
+//-------------32-------------
+
+// const clothing = ['shoes', 'shirts', 'socks', 'sweaters'];
+
+// console.log(clothing.length);
+
+//--------------33-----------
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// console.log(array1.at(2));
+
+const inventory = [
+    { name: 'apples', quantity: 2 },
+    { name: 'bananas', quantity: 0 },
+    { name: 'cherries', quantity: 5 }
+];
+
+const result = inventory.find(({ name }) => name === 'cherries');
+
+console.log(result)
+
 
 
 
